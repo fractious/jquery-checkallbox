@@ -8,6 +8,10 @@
   <!-- Load local QUnit (grunt requires v1.0.0 or newer). -->
   <link rel="stylesheet" href="../libs/qunit/qunit.css" media="screen">
   <script src="../libs/qunit/qunit.js"></script>
+  <script src="../libs/qunit-tap/qunit-tap.js"></script>
+  <script>
+    qunitTap(QUnit, function() { console.log.apply(console, arguments); });
+  </script>
   <script src="../libs/pavlov/pavlov.js"></script>
   <!-- Load local lib and tests. -->
   <script src="../src/jquery.checkallbox.js"></script>
